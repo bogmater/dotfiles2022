@@ -1,0 +1,16 @@
+- defaults:
+  link:
+    relink: true
+
+- clean: ['~']
+
+- link:
+  ~/.bashrc: bashrc
+  ~/.zshrc: zshrc
+  ~/.vimrc: vimrc
+  ~/.tmux.conf: tmux.conf
+  ~/.config/nvim: config/nvim/
+
+- shell:
+  - [mkdir -p ~/.config, Creating config folder]
+  - [git submodule update --init --recursive, Installing submodules]
