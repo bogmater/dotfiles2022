@@ -113,6 +113,7 @@
     alias gs="git s"
     alias nah="git reset --hard;git clean -df"
     alias co="git checkout"
+    alias glp="git log --all --decorate --oneline --graph"
 
     # Docker
     alias d="docker"
@@ -174,3 +175,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+set -o vi
+bindkey -v
+bindkey '^R'  history-incremental-search-backward
+
+eval "$(starship init zsh)"
