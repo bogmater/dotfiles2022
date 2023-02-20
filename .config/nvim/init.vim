@@ -22,9 +22,10 @@ set backup
 set backupdir=~/.local/share/nvim/backup//
 set updatetime=300
 set redrawtime=10000
+set nohlsearch
 
 " tab stuff
-set expandtab ts=2 sw=2 ai
+set expandtab ts=4 sw=4 ai
 
 " reselect visual block after indent/outdent
 vnoremap < <gv
@@ -100,12 +101,18 @@ source ~/.config/nvim/plugins/typescript-vim.vim
 source ~/.config/nvim/plugins/vim-jsx-pretty.vim
 source ~/.config/nvim/plugins/vim-graphql.vim
 source ~/.config/nvim/plugins/vim-closetag.vim
+source ~/.config/nvim/plugins/vim-easy-align.vim
+source ~/.config/nvim/plugins/gruvbox.vim
+source ~/.config/nvim/plugins/nvim-treesitter.vim
+source ~/.config/nvim/plugins/rust-vim.vim
+source ~/.config/nvim/plugins/phpcsfixer.vim
+source ~/.config/nvim/plugins/svelte.vim
 
 call plug#end()
 
 doautocmd User PlugLoaded
 
 " colorscheme
-colorscheme seoul256
-set background=light
+colorscheme gruvbox
+set background=dark
 

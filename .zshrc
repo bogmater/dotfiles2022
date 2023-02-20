@@ -131,8 +131,11 @@
     alias copy="xclip -selection clipboard"
     alias paste="xclip -o -selection clipboard"
     alias ag="sag"
+    alias fakeafk="keep presence -s 600"
     #alias cat="bat"
     alias webcam="gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video1"
+    alias usephp7.4="sudo update-alternatives --set php /usr/bin/php7.4"
+    alias usephp8.1="sudo update-alternatives --set php /usr/bin/php8.1"
 
     # Open vim with z argument
     v() {
