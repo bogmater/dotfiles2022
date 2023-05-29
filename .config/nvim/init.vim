@@ -85,6 +85,7 @@ endif
 call plug#begin(data_dir . '/plugins')
 
 source ~/.config/nvim/plugins/seoul256.vim
+source ~/.config/nvim/plugins/zenburn.vim
 source ~/.config/nvim/plugins/airline.vim
 source ~/.config/nvim/plugins/coc.vim
 source ~/.config/nvim/plugins/vim-commentary.vim
@@ -113,6 +114,6 @@ call plug#end()
 doautocmd User PlugLoaded
 
 " colorscheme
-colorscheme gruvbox
-set background=dark
+colorscheme zenburn
+set background=light
 
