@@ -215,3 +215,6 @@ fi
 if (( $+commands[zsh-autosuggestions] )); then
   ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
 fi
+
+# opencode
+export PATH=/home/dtrupcevic/.opencode/bin:$PATH
